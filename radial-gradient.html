@@ -1,0 +1,30 @@
+<!DOCTYPE html5>
+<html>
+<body>
+
+<canvas id ="canvas1" width="600" height="600" style="border:2px solid #FF0000;">
+</canvas>
+
+<script>
+var c1=document.getElementById("canvas1");
+var context1=c1.getContext("2d");
+
+context1.beginPath();
+context1.rect(50,20,500,500);
+context1.lineWidth=5;
+context1.strokeStyle="blue";
+context1.stroke();
+
+// add Radial gradient
+var grd = context1.createRadialGradient(115,70,20, 115,90,70);
+// light blue
+grd.addColorStop(0, "#8ED6FF");   
+// dark blue
+grd.addColorStop(1, "#004CB3");
+context1.fillStyle = grd;
+context1.fill();
+
+</script>
+
+</body>
+</html>

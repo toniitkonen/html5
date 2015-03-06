@@ -1,0 +1,36 @@
+<!DOCTYPE html5>
+<html>
+<body>
+
+<canvas id ="canvas1" width="500" height="400" style="border:2px solid #FF0000;">
+</canvas>
+
+<script>
+var c1=document.getElementById("canvas1");
+var context1=c1.getContext("2d");
+
+context1.beginPath();
+context1.rect(60,60,100,50);
+context1.lineWidth=5;
+context1.strokeStyle="red";
+// Now fill the rectangle with yellow color
+context1.fillStyle = 'green';
+context1.fill();
+context1.stroke();
+
+var c2=document.getElementById("canvas1");
+var context2=c2.getContext("2d");
+
+context2.beginPath();
+context2.rect(200,200,100,50);
+context2.lineWidth=5;
+context2.strokeStyle="red";
+// Now fill the rectangle with yellow color
+context2.fillStyle = 'yellow';
+context2.fill();
+context2.stroke();
+
+</script>
+
+</body>
+</html>
